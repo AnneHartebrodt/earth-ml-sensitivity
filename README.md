@@ -25,17 +25,17 @@ Here we investigate two biased splits, based on the metadata and based on the se
 
 ### Metadata based split:
 In the metadata in the training data used for the TEMPRO model the species of origin is annotated. 
-~[image](../figures/species_split.png)
+~[image](figures/species_split.png)
 
 
 ### Homology based split:
 For the homology based split, we used computed the pairwise alignment distance between all training sequences from the database based on the BLOSUM90 matrix which is a substitution matrix for high sequence similarity, as most of the species in the data base are from the group of camelidae. We clustered the precomputed distance matrix using spectral clustering to obtain a predefined number of homology clusters. 
-~[image](../figures/homology_split.png)
+~[image](figures/homology_split.png)
 
 
 ## Comparison with other models
 
-~[image](../figures/random_forest.png)
+~[image](figures/random_forest.png)
 
 
 ## References:
