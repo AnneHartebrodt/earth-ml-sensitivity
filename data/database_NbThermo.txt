@@ -1,0 +1,549 @@
+id	Origin	Type	Tm_value	Tm_method	Refolding (%)	Raw
+00001	Llama	Natural	67.5	Circular dichroism	63.0	EVQLQASGGGLVRPGGSLRLSCAASGFTFSSYAMMWVRQAPGKGLEWVSAINGGGGSTSYADSVKGRFTISRDNAKNTLYLQMNSLKPEDTAVYYCAKYQAAVHQEKEDYWGQGTQVTVSS
+00002	Llama	Semi-Synthetic	65	Circular dichroism	56.0	EVQLQASGGGLVRPGGSLRLSCAASGFTFSSYAMMWVRQAPGKGLEWVSAINGGGGSTSYADSVKGRFTISRDNAKNTLYLQMNSLKPEDTAVYYCAKYQAAVHQEKEDYWGQGTQVTVSSAAAGAGGSGGAPASNRCSQGSCWN
+00003	Llama	Natural	62	Circular dichroism	50.0	EVQLQASGGGLVQAGGSLRLSCAASGRTDSTQHMAWFRQAPGKEREFVTAIQWRGGGTSYTDSVKGRFTISRDNAKNTVYLEMNSLKPEDTAVYYCATNTRWTYFSPTVPDRYDYWGQGTQVTVSS
+00004	Llama	Semi-Synthetic	62	Circular dichroism	44.0	EVQLQASGGGLVQAGGSLRLSCAASGRTDSTQHMAWFRQAPGKEREFVTAIQWRGGGTSYTDSVKGRFTISRDNAKNTVYLEMNSLKPEDTAVYYCATNTRWTYFSPTVPDRYDYWGQGTQVTVSSAAAGAGGSGGAPASNRCSQGSCWN
+00005	Llama	Natural	70	Circular dichroism	41.0	DVQLQASGGGLVQAGGSLRLSCAASARTFYTMGWFRQVLGKDREFVGAIRWGVYATTRYADSVKGRFSISRDDATNTVALQMNSLKPEDTAVYYCAARAGPLGFELSATSSAEYDYWGQGTQVTVSS
+00006	Llama	Semi-Synthetic	68	Circular dichroism	47.0	DVQLQASGGGLVQAGGSLRLSCAASARTFYTMGWFRQVLGKDREFVGAIRWGVYATTRYADSVKGRFSISRDDATNTVALQMNSLKPEDTAVYYCAARAGPLGFELSATSSAEYDYWGQGTQVTVSSAAAGAGGSGGAPASNRCSQGSCWN
+00007	Llama	Natural	55	Circular dichroism	87.0	EVQLQASGGGLVQAGDSLRLSCVAVSGRTISTFAMGWFRQAPGKEREFVATINWSGSSARYADPVEGRFTISRDDAKNTVYLEMSSLKPGDSAVYYCASGRYLGGITSYSQGDFAPWGQGTQVTVSS
+00008	Llama	Semi-Synthetic	55	Circular dichroism	62.0	EVQLQASGGGLVQAGDSLRLSCVAVSGRTISTFAMGWFRQAPGKEREFVATINWSGSSARYADPVEGRFTISRDDAKNTVYLEMSSLKPGDSAVYYCASGRYLGGITSYSQGDFAPWGQGTQVTVSSAAAGAGGSGGAPASNRCSQGSCWN
+00009	Unknown	Synthetic	82.5	DSF (SYPRO)		MEVQLEESGGGLVQPGGSLRLSCAASGFNIKDTYIGWVRQAPGKGEEWVASIYPTSGYTRYADSVKGRFTISADTSKNTAYLQMNSLRAEDTAVYYCAAGSIQKSLQTAESILEEFDYWGQGTLVTVSSDHHHHHHH
+00010	Unknown	Synthetic	80	DSF (SYPRO)		MEVQLEESGGGLVQPGGSLRLSCAASGFNIKDTYIGWVRQAPGKGEEWVASIYPTSGYTRYADSVKGRFTISADTSKNTAYLQMNSLRAEDTAVYYCAAGSAQAGNAEEAEEEFDYWGQGTLVTVSSDHHHHHHH
+00011	Llama	Synthetic	67.5	DSF (SYPRO)		MEVQLQESGGGLVQAGGSLRLSCAASGELYALISMGWFRQAPGKEREFVAAISRNGDNTYYTDSVKGRFTISRDNAKNTVELQMNSLKPEDTAVYYCAADKFASPDGSVTIMTNEYDYWGQGTQVTVSDHHHHHHH
+00012	Unknown	Synthetic	78.5	DSF (SYPRO)		MEVQLEESGGGLVQPGGSLRLSCAASGFNIKDTYIGWVRQAPGKGEEWVASIYPTSGYTRYADSVKGRFTISADTSKNTAYLQMNSLRAEDTAVYYCAAGSQSGYHFEEFDYWGQGTLVTVSSDHHHHHHH
+00013	Unknown	Synthetic	77.5	DSF (SYPRO)		MEVQLEESGGGLVQPGGSLRLSCAASGFNIKDTYIGWVRQAPGKGEEWVASIYPTSGYTRYADSVKGRFTISADTSKNTAYLQMNSLRAEDTAVYYCAAGSGSSATEVYEEFDYWGQGTLVTVSSDHHHHHHH
+00014	Unknown	Synthetic	80	DSF (SYPRO)		MEVQLEESGGGLVQPGGSLRLSCAASGFNIKDTYIGWVRQAPGKGEEWVASIYPTSGYTRYADSVKGRFTISADTSKNTAYLQMNSLRAEDTAVYYCAAGSVVADLSVEEFDYWGQGTLVTVSSDHHHHHHH
+00015	Camel	Synthetic	54.4	DSF (SYPRO)		QVQLVESGGGLVQAGGSLRLSCAASGFPVQAREMEWYRQAPGKEREWVAAIKSTGTYTAYAYSVKGRFTISRDNAKNTVYLQMNSLKPEDTAVYYCYVYVGSSYIGQGTQVTVSS
+00016	Camel	Synthetic	56.5	DSF (SYPRO)		QVQLVESGGGLVQAGGSLRLSCAASGFPVAYKTMWWYRQAPGKEREWVAAIESYGIKWTRYADSVKGRFTISRDNAKNTVYLQMNSLKPEDTAVYYCIVWVGAQYHGQGTQVTVSS
+00017	Camel	Synthetic	62.1	DSF (SYPRO)		QVQLVESGGGLVQAGGSLRLSCAASGFPVYRDRMAWYRQAPGKEREWVAAIYSAGQQTRYADSVKGRFTISRDNAKNTVYLQMNSLKPEDTAVYYCNVKDVGHHYEYYDYWGQGTQVTVSS
+00018	Camel	Synthetic	78.4	DSF (SYPRO)		QVQLVESGGGSVQAGGSLRLSCAASGSISSITYLGWFRQAPGKEREGVAALITVNGHTYYADSVKGRFTVSLDNAKNTVYLQMNSLKPEDTALYYCAAAAWGYAWPLHQDDYWYWGQGTQVTVSS
+00019	Alpaca	Natural	72.3	Circular dichroism		QVQLVESGGGLVQAGGSLRLSCAASGRTYTMGWFRQAPGKEREFVAAMRWSDTDYADSLKGRFTISRDNANNAMYLQMNSLGPEDTAVYYCAAGEAWLARSTHHYDYWGQGTQVTVSS
+00020	Alpaca	Natural	75.44	Circular dichroism		QVQLVESGGGLVQPGGSLRLSCAASGLTLDYYAIGWFRQAPGKEREGVSCISHPGGSTNYADSVKGRFTISRDNAKNTVYLQMNSLKPEDTAVYYCAASPLALFRLCVLPSPLPYDYWGQGTQVTVSS
+00021	Alpaca	Natural	73.37	Circular dichroism		QVQLVESGGGLVQPGGTLRLSCAASGFTLDYYAIGWFRQAPGKEREGVSCISGSGGITNYTDSVKGRFTISRDNAKNTVYLQMNSLKPEDTAVYYCAPVSHTVVAGCAFEAWTDFGSWGQGTQVTVSS
+00022	Alpaca	Natural	78.98	Circular dichroism		QLQLVESGGGLVQAGGSLRLSCAASERTFSGGVMGWFRQRPGKEREFVAAIRWNGASTFYADSVKGRFTCSRDNAKNTGYLQMNSLTPEDTAVYYCARAVRTYASSDYYFQERTYDYWGQGTQVTVSS
+00023	Alpaca	Natural	71.26	Circular dichroism		QVQLVESGGGLVQPGGSLRLSCAASGFTSGHYAIGWFRQAPGKEREGVSCIGSSDGSTYYADSVKGRFTISRDNAKNTVYLQMNSLKPEDTAVYYCAAGLWYGRSLNSFDYDYWGQGTQVTVSS
+00024	Alpaca	Natural	98.23	Circular dichroism		QLQLVESGGGLVQAGGSLRLSCAASGRTFSSATMGWFRQAPGKEREFVAAISWSGLSRYYADSVKGRFTISRDNAENTVYLQMNSLKTEDTAVYYCAADSWGCSGLGCYDARQYDVWGQGTQVTVSS
+00025	Alpaca	Natural	71.07	Circular dichroism		QLQLVESGGGLVQPGGSLRLSCAASGRTFGSFMGWFRQAPGQERDFVAAITWSGGSTYYADSVKGRFTISRDNAENTVYLQMNSLKPEDTAVYYCAARISSAYYTRSSSYAYWGQGTQVTVSS
+00026	Unknown	Synthetic	66.9	Circular dichroism		QVQLVESGGGLVQAGGSLRLSCAASGIIFGRNAMGWYRQAPGKERELVAGITRRGSITYYADSVKGRFTISRDNAKNTVYLQMNSLKPEDTAVYYCAADPASPAPGDYWGQGTQVTVSS
+00027	Unknown	Synthetic	67.6	Circular dichroism		QVQLVESGGGLVQAGGSLRLSCAASGYIFGRNAMGWYRQAPGKERELVAGITRRGSITYYADSVKGRFTISRDNAKNTVYLQMNSLKPEDTAVYYCAADPASPAYGDYWGQGTQVTVSS
+00028	Llama	Natural	71.8	DSF (SYPRO)		QVQLVESGGGLVQAGGSLRLSCAVSGAGAHRVGWFRRAPGKEREFVAAIGASGGMTNYLDSVKGRFTISRDNAKNTIYLQMNSLKPQDTAVYYCAARDIETAEYIYWGQGTQVTVSS
+00029	Llama	Natural	72.8	DSF (SYPRO)		QVQLVESGGGLVQAGGSLRLSCAVSGLGAHRVGWFRRAPGKEREFVAAIGANGGNTNYLDSVKGRFTISRDNAKNTIYLQMNSLKPQDTAVYYCAARDIETAEYTYWGQGTQVTVSS 
+00030	Llama	Natural	65.9	DSF (SYPRO)		HVQLVESGGGLVQAGGSLRLSCAASGGTFTTFRMAWFRQTPGKEREFVAASSWGFVNYADPVKGRFTISRDNAKNTVYLEMSSLKTEDTAVYYCAARNPGTGQYDYWGQGTQVTVSS 
+00031	Llama	Natural	74.4	Circular dichroism	73.0	DVQLQESGGGLVQPGGSLRLSCAASGLTLDYYAIGWFRQAPGKEREGVSCISSSDGSTYYADSVKGRFTTSRDNAKNTVYLQMNSLKPEDTAVYYCAAVPSTYYSGTYYYTCHPGGMDYWGKGTQVTVSS
+00032	Alpaca	Natural	57.9	Other		QVQLVESGGGLVQPGESLRLSCAASGSIFGIYAVHWFRMAPGKEREFTAGFGSHGSTNYAASVKGRFTMSRDNAKNTTYLQMNSLKPADTAVYYCHALIKNELGFLDYWGPGTQVTVSS
+00033	Camel	Natural	57.9	DSF (SYPRO)		QVQLQESGGGSVQAGGSLKLSCAASGGAYRNACMGFRQAPGKEREGAIINSVDTTYYADPVKGRFTISRDNAKSTVYLLMNSLKPEDTAIYYCAQVARVVCPGDKLGASGYNYWGQGTQVTVSS
+00034	Camel	Natural	49.6	DSF (SYPRO)		GSQVQLQESGGGSVQAGGSLRLSCAASGPTYSSYFMAWFRQAPGMEREGVAASSYDGSTTLYADSVKGRFTISQGNAKNTKFLLLNNLEPEDTAIYYCALRRRGWSNTSGWKQPGWYDYWGQGTQVTVSS
+00035	Camel	Natural	75.6	DSF (SYPRO)		QVQLQESGGGSVQAGGSLRLSCAASGNTHITLAFRQAPGKEREGVFIYTSTGYTYYSDSVKGRFTISQDNAKNTVYLQMDNLKPEDAGMYYCAAGRTRSVRPGGRIDPGAFDYWGQGTQVTVSS
+00036	Camel	Natural	51.8	DSF (SYPRO)		QVQLQESGGGSVQAGGSLRLSCESSGMTFSVYNLGLRQAPGQECELSTITRDGSTDYADSMKGRFTISRDNAKNTMYLQMTSLKPDDTAVYYCAAGVGVVDCTEGQGTQVTVSS
+00037	Camel	Natural	53.6	DSF (SYPRO)		GPHMAQVQLVESGGRLVQAGDSLRLSCAASGRTFSTSAMAWFRQAPGREREFVAAITWTVGNTILGDSVKGRFTISRDRAKNTVDLQMDNLEPEDTAVYYCSARSRGYVLSVLRSVDSYDYWGQGTQVTVS
+00038	Camel	Natural	46.9	DSF (SYPRO)		MAQVQLVESGGALVQPGGSLRLSCAASGFPVNRYSMRWYRQAPGKEREWVAGMSSAGDRSSYEDSVKGRFTISRDDARNTVYLQMNSLKPEDTAVYYCNVNVGFEYWGQGTQVTVSSLEHHHHHH
+00039	Llama	Natural	54.5	nanoDSF		QVQLQESGGGLVQAGGSLRLSCTAFRSVGVIDVMGWYRQAPGKQRELVATVTSGSSTTYADSVKGRFAISRDNAKTVSLQMNSLKPEDTAVYYCADDDEGKLLNRRSVWYYWSQGTQVTVSS
+00040	Llama	Natural	58	nanoDSF		QVQLQESGGGLVQPGGSLRLSCAASGFTFGSYDMAWVRQAPGKGPEWVSSINSSGGSTEYASSVKGRFTVSRDNAKNMLYLQMDRLKLEDTAVYYCADEGNPSTTWYYEDQGTQVTVSS
+00041	Llama	Natural	58	nanoDSF		QVQLQESGGGLVQAGGSLRLSCASSGSILSMNVMGWYRQAPGKQREMVAQITRIGDTNYSSSMKGRFTISRDNADNTLYLQMNRLEPEDTAVYFCANNNRSTYYYYWGQGTQVTVSS
+00042	Llama	Natural	53	nanoDSF		QVQLQESGGGLVQAGGSLRLSCTALRSVGSENGMGWYRQSPGNQRELVATVTSDTSTTYRDSVKGRFAISRDSAKTVSLQMNNLKPEDTAVYYCADEEGHHLLNRRSTVWYWGQGTQVTVSS
+00043	Llama	Natural	58	nanoDSF		QVQLQESGGGLVQAGGSLRLSCTAFRSVGVIDVMGWYRQAPGTQRELVATVTSSSSTTYADSVKGRFAISRDDAKTVSLQMNSLKPEDTAVYYCADDEEGLLNNRRSSVWYWGQGTQVTVSS
+00044	Llama	Natural	68	nanoDSF		QVQLQESGGGLVQAGGSLRLSCAASGSIGSINFIFWYRQAPGKQREFVARISRSGRSDYVESVKGRFTISRDNAKNTVYLQMNNLKSEDTAVYYCALGNNWGQGTQVTVSS
+00045	Camel	Natural	71.05	nanoDSF		
+00046	Camel	Natural	74.35	nanoDSF		
+00047	Camel	Natural	63.9	nanoDSF		
+00048	Camel	Natural	62.45	nanoDSF		
+00049	Camel	Natural	64.55	nanoDSF		
+00050	Camel	Natural	63.2	nanoDSF		
+00051	Camel	Natural	57.95	nanoDSF		
+00052	Camel	Natural	67.05	nanoDSF		
+00053	Camel	Natural	58.6	nanoDSF		
+00054	Camel	Natural	69.5	nanoDSF		
+00055	Camel	Natural	65.5	nanoDSF		
+00056	Camel	Natural	67.15	nanoDSF		
+00057	Camel	Natural	70.8	nanoDSF		
+00058	Camel	Natural	85.75	nanoDSF		
+00059	Camel	Natural	65.96298507	DSF (SYPRO)		
+00060	Camel	Natural	66.5	nanoDSF		
+00061	Camel	Natural	63.65	nanoDSF		
+00062	Camel	Natural	70.58334992	DSF (SYPRO)		
+00063	Camel	Natural	69.46915423	DSF (SYPRO)		
+00064	Camel	Natural	73.2	nanoDSF		
+00065	Camel	Natural	72.55	nanoDSF		
+00066	Camel	Natural	71.45	nanoDSF		
+00067	Camel	Natural	70.4	nanoDSF		
+00068	Camel	Natural	60.05	nanoDSF		
+00069	Camel	Natural	58.5	nanoDSF		
+00070	Camel	Natural	62.95	nanoDSF		
+00071	Camel	Natural	67.15	nanoDSF		
+00072	Camel	Natural	64.25	nanoDSF		
+00073	Camel	Natural	70.05	nanoDSF		
+00074	Camel	Natural	77.45	nanoDSF		
+00075	Camel	Natural	68.85	nanoDSF		
+00076	Camel	Natural	56.15975124	DSF (SYPRO)		
+00077	Camel	Natural	69.15	nanoDSF		
+00078	Camel	Natural	85	nanoDSF		
+00079	Camel	Natural	61.45	nanoDSF		
+00080	Camel	Natural	57.35	nanoDSF		
+00081	Camel	Natural	73.1	nanoDSF		
+00082	Camel	Natural	63.3	nanoDSF		
+00083	Camel	Natural	60.1	nanoDSF		
+00084	Camel	Natural	76.35	nanoDSF		
+00085	Camel	Natural	65.75	nanoDSF		
+00086	Camel	Natural	62.5	nanoDSF		
+00087	Camel	Natural	53.6	nanoDSF		
+00088	Camel	Natural	60.75	nanoDSF		
+00089	Camel	Natural	71.05	nanoDSF		
+00090	Camel	Natural	69.45	nanoDSF		
+00091	Camel	Natural	76.6	nanoDSF		
+00092	Camel	Natural	74.1	nanoDSF		
+00093	Camel	Natural	77.8	nanoDSF		
+00094	Camel	Natural	78.85	nanoDSF		
+00095	Llama	Natural	70.12363184	DSF (SYPRO)		
+00096	Llama	Natural	63.55	nanoDSF		
+00097	Llama	Natural	66.94111111	DSF (SYPRO)		
+00098	Llama	Natural	57.74885572	DSF (SYPRO)		
+00099	Llama	Natural	69.47366501	DSF (SYPRO)		
+00100	Llama	Natural	78.7	nanoDSF		
+00101	Llama	Natural	74.8	nanoDSF		
+00102	Llama	Natural	76.3	nanoDSF		
+00103	Llama	Natural	67.45	nanoDSF		
+00104	Llama	Natural	80	nanoDSF		
+00105	Llama	Natural	70.80817579	DSF (SYPRO)		
+00106	Llama	Natural	75.15	nanoDSF		
+00107	Llama	Natural	75.75	nanoDSF		
+00108	Llama	Natural	74.65	nanoDSF		
+00109	Llama	Natural	66.6	nanoDSF		
+00110	Llama	Natural	69.5	DSF (SYPRO)		
+00111	Llama	Natural	69	DSF (SYPRO)		
+00112	Camel	Natural	62	Circular dichroism		
+00113	Camel	Natural	78	Circular dichroism		
+00114	Camel	Natural	62	Circular dichroism		
+00115	Camel	Natural	68	Circular dichroism		
+00116	Camel	Natural	76	Circular dichroism		
+00117	Llama	Natural	60	Circular dichroism		
+00118	Camel	Semi-Synthetic	84.2	Circular dichroism	93.4	
+00119	Camel	Semi-Synthetic	76.2	Circular dichroism	93.0	
+00120	Camel	Semi-Synthetic	79.4	Circular dichroism	92.6	
+00121	Camel	Semi-Synthetic	82.5	Circular dichroism	96.3	
+00122	Camel	Semi-Synthetic	78.4	Circular dichroism	81.6	
+00123	Camel	Semi-Synthetic	79.5	Circular dichroism	66.7	
+00124	Camel	Semi-Synthetic	70	Circular dichroism	69.9	
+00125	Camel	Semi-Synthetic	79.9	Circular dichroism	86.3	
+00126	Camel	Semi-Synthetic	79.6	Circular dichroism	39.3	
+00127	Camel	Semi-Synthetic	72	Circular dichroism	35.3	
+00128	Camel	Semi-Synthetic	74.3	Circular dichroism	8.1	
+00129	Camel	Semi-Synthetic	63.4	Circular dichroism	19.3	
+00130	Camel	Natural	79.7	Circular dichroism	93.3	
+00131	Camel	Natural	51.5	Circular dichroism		
+00132	Camel	Natural	61.9	Circular dichroism		
+00133	Camel	Semi-Synthetic	77.8	Circular dichroism		
+00134	Camel	Semi-Synthetic	60.2	Circular dichroism		
+00135	Camel	Semi-Synthetic	87	Circular dichroism		
+00136	Camel	Semi-Synthetic	70	Circular dichroism		
+00137	Camel	Semi-Synthetic	82	Circular dichroism		
+00138	Camel	Semi-Synthetic	65.6	Circular dichroism		
+00139	Camel	Semi-Synthetic	90	Circular dichroism		
+00140	Camel	Semi-Synthetic	71.4	Circular dichroism		
+00141	Camel	Semi-Synthetic	71.2	Circular dichroism		
+00142	Camel	Semi-Synthetic	90	Circular dichroism		
+00143	Camel	Semi-Synthetic	89	Circular dichroism		
+00144	Llama	Semi-Synthetic	69.5	Circular dichroism		
+00145	Llama	Semi-Synthetic	60.3	Circular dichroism		
+00146	Llama	Semi-Synthetic	75.7	Circular dichroism		
+00147	Llama	Semi-Synthetic	76.2	Circular dichroism		
+00148	Llama	Semi-Synthetic	85	Circular dichroism		
+00149	Camel	Natural	71	Circular dichroism		
+00150	Camel	Semi-Synthetic	61	Circular dichroism		
+00151	Camel	Semi-Synthetic	60	Circular dichroism		
+00152	Camel	Semi-Synthetic	61	Circular dichroism		
+00153	Camel	Semi-Synthetic	59	Circular dichroism		
+00154	Camel	Semi-Synthetic	62	Circular dichroism		
+00155	Camel	Semi-Synthetic	57	Circular dichroism		
+00156	Camel	Semi-Synthetic	60	Circular dichroism		
+00157	Camel	Natural				
+00158	Camel	Semi-Synthetic	53	Circular dichroism		
+00159	Camel	Semi-Synthetic	53	Circular dichroism		
+00160	Camel	Semi-Synthetic	57	Circular dichroism		
+00161	Camel	Semi-Synthetic	53	Circular dichroism		
+00162	Camel	Semi-Synthetic	51	Circular dichroism		
+00163	Camel	Semi-Synthetic	53	Circular dichroism		
+00164	Camel	Semi-Synthetic	59	Circular dichroism		
+00165	Camel	Natural	78	Circular dichroism		
+00166	Camel	Semi-Synthetic	67	Circular dichroism		
+00167	Camel	Semi-Synthetic	63	Circular dichroism		
+00168	Camel	Semi-Synthetic	69	Circular dichroism		
+00169	Camel	Semi-Synthetic	70	Circular dichroism		
+00170	Camel	Natural	78	Circular dichroism		
+00171	Camel	Semi-Synthetic	71	Circular dichroism		
+00172	Camel	Semi-Synthetic	69	Circular dichroism		
+00173	Camel	Semi-Synthetic	74	Circular dichroism		
+00174	Camel	Semi-Synthetic	69	Circular dichroism		
+00175	Camel	Semi-Synthetic	70	Circular dichroism		
+00176	Camel	Semi-Synthetic	72	Circular dichroism		
+00177	Human	Synthetic	66	Circular dichroism		
+00178	Human	Synthetic	79	Circular dichroism		
+00179	Llama	Natural	66	Circular dichroism	50.0	
+00180	Llama	Natural	74	Circular dichroism		
+00181	Llama	Natural	64	Circular dichroism	75.0	
+00182	Llama	Natural	67	Circular dichroism	75.0	
+00183	Llama	Natural	64	Circular dichroism	75.0	
+00184	Alpaca	Natural	66	DSF (SYPRO)		
+00185	Llama	Natural	65	nanoDSF		
+00186	Llama	Natural	61	nanoDSF		
+00187	Llama	Natural	69	Circular dichroism		
+00188	Llama	Natural	69	Circular dichroism		
+00189	Llama	Natural	58	Circular dichroism		
+00190	Llama	Natural	49	Circular dichroism		
+00191	Llama	Natural	46	Circular dichroism		
+00192	Llama	Natural	70	Circular dichroism		
+00193	Llama	Natural	65	Circular dichroism		
+00194	Llama	Natural	70	Circular dichroism		
+00195	Llama	Natural	65	Circular dichroism		
+00196	Llama	Natural	64	Circular dichroism		
+00197	Llama	Natural	72	Circular dichroism		
+00198	Llama	Natural	62	Circular dichroism		
+00199	Unknown	Semi-Synthetic	43.38	DSF (SYPRO)		
+00200	Unknown	Semi-Synthetic	57.47	DSF (SYPRO)		
+00201	Unknown	Semi-Synthetic	60.59	DSF (SYPRO)		
+00202	Unknown	Semi-Synthetic	60.01	DSF (SYPRO)		
+00203	Unknown	Semi-Synthetic	43.08	DSF (SYPRO)		
+00204	Unknown	Semi-Synthetic	51.16	DSF (SYPRO)		
+00205	Unknown	Semi-Synthetic	48.91	DSF (SYPRO)		
+00206	Unknown	Semi-Synthetic	50.74	DSF (SYPRO)		
+00207	Alpaca	Natural	66	Circular dichroism	85.0	
+00208	Unknown	Synthetic	52.35	nanoDSF		
+00209	Unknown	Synthetic	47.25	nanoDSF		
+00210	Unknown	Synthetic	46.8	nanoDSF		
+00211	Unknown	Synthetic	47.02	nanoDSF		
+00212	Llama	Natural	51	DSF (SYPRO)		
+00213	Llama	Natural	50	DSF (SYPRO)		
+00214	Llama	Natural	75	DSF (SYPRO)		
+00215	Llama	Natural	60	DSF (SYPRO)		
+00216	Llama	Natural	72	DSF (SYPRO)		
+00217	Llama	Natural	54	DSF (SYPRO)		
+00218	Llama	Natural	43	DSF (SYPRO)		
+00219	Llama	Natural	54	DSF (SYPRO)		
+00220	Llama	Natural	67	DSF (SYPRO)		
+00221	Llama	Natural	68	DSF (SYPRO)		
+00222	Llama	Natural	60	DSF (SYPRO)		
+00223	Llama	Natural	51	DSF (SYPRO)		
+00224	Llama	Natural	60	DSF (SYPRO)		
+00225	Llama	Natural	62	DSF (SYPRO)		
+00226	Llama	Natural	46	DSF (SYPRO)		
+00227	Llama	Natural	61	DSF (SYPRO)		
+00228	Llama	Natural	62	DSF (SYPRO)		
+00229	Alpaca	Natural	66	Circular dichroism	70.0	
+00230	Alpaca	Natural	65	Circular dichroism	42.0	
+00231	Alpaca	Natural	70	Circular dichroism	77.0	
+00232	Alpaca	Natural	74	Circular dichroism	71.0	
+00233	Llama	Natural	70	Circular dichroism	75.0	
+00234	Llama	Semi-Synthetic	85	Circular dichroism	83.0	
+00235	Llama	Natural	85	Circular dichroism		
+00236	Camel	Natural	65	DSF (SYPRO)		
+00237	Camel	Natural	65	DSF (SYPRO)		
+00238	Unknown	Unknown	50.75	nanoDSF		
+00239	Llama	Natural	59	Circular dichroism	56.0	
+00240	Llama	Natural	60	Circular dichroism	30.0	
+00241	Llama	Natural	48	Circular dichroism	15.0	
+00242	Llama	Natural	64	Circular dichroism	93.0	
+00243	Llama	Natural	63	Circular dichroism	52.0	
+00244	Llama	Natural	64	Circular dichroism	30.0	
+00245	Llama	Natural	65	Circular dichroism	59.0	
+00246	Llama	Natural	66	Circular dichroism	83.0	
+00247	Camel	Semi-Synthetic	79.1	DSF (SYPRO)		
+00248	Camel	Semi-Synthetic	77.2	DSF (SYPRO)		
+00249	Camel	Semi-Synthetic	81.4	DSF (SYPRO)		
+00250	Camel	Semi-Synthetic	78.5	DSF (SYPRO)		
+00251	Camel	Semi-Synthetic	75.5	DSF (SYPRO)		
+00252	Camel	Semi-Synthetic	76.9	DSF (SYPRO)		
+00253	Camel	Semi-Synthetic	76.5	DSF (SYPRO)		
+00254	Camel	Semi-Synthetic	77.4	DSF (SYPRO)		
+00255	Camel	Semi-Synthetic	77.6	DSF (SYPRO)		
+00256	Camel	Semi-Synthetic	77.5	DSF (SYPRO)		
+00257	Camel	Semi-Synthetic	70.8	DSF (SYPRO)		
+00258	Camel	Semi-Synthetic	74.9	DSF (SYPRO)		
+00259	Camel	Semi-Synthetic	78.1	DSF (SYPRO)		
+00260	Camel	Semi-Synthetic	74	DSF (SYPRO)		
+00261	Camel	Semi-Synthetic	76	DSF (SYPRO)		
+00262	Camel	Semi-Synthetic	73.4	DSF (SYPRO)		
+00263	Camel	Semi-Synthetic	77.3	DSF (SYPRO)		
+00264	Camel	Semi-Synthetic	74	DSF (SYPRO)		
+00265	Camel	Semi-Synthetic	80	DSF (SYPRO)		
+00266	Camel	Semi-Synthetic	79.7	DSF (SYPRO)		
+00267	Camel	Semi-Synthetic	79	DSF (SYPRO)		
+00268	Camel	Semi-Synthetic	81	DSF (SYPRO)		
+00269	Camel	Semi-Synthetic	81.6	DSF (SYPRO)		
+00270	Camel	Semi-Synthetic	78.5	DSF (SYPRO)		
+00271	Camel	Semi-Synthetic	80.9	DSF (SYPRO)		
+00272	Camel	Semi-Synthetic	81.3	DSF (SYPRO)		
+00273	Camel	Semi-Synthetic	78.5	DSF (SYPRO)		
+00274	Camel	Semi-Synthetic	81.4	DSF (SYPRO)		
+00275	Camel	Semi-Synthetic	81.9	DSF (SYPRO)		
+00276	Camel	Semi-Synthetic	77	DSF (SYPRO)		
+00277	Camel	Semi-Synthetic	81.3	DSF (SYPRO)		
+00278	Camel	Semi-Synthetic	81.5	DSF (SYPRO)		
+00279	Camel	Natural	39	DSF (SYPRO)		
+00280	Camel	Semi-Synthetic	74	DSF (SYPRO)		
+00281	Camel	Semi-Synthetic	75	DSF (SYPRO)		
+00282	Camel	Natural	74	DSF (SYPRO)		
+00283	Camel	Semi-Synthetic	95	DSF (SYPRO)		
+00284	Camel	Natural	70	Circular dichroism		
+00285	Camel	Semi-Synthetic	74	Circular dichroism		
+00286	Camel	Semi-Synthetic	73.7	Circular dichroism		
+00287	Camel	Natural	75.6	nanoDSF		
+00288	Camel	Semi-Synthetic	70.5	nanoDSF		
+00289	Camel	Semi-Synthetic	63.9	nanoDSF		
+00290	Camel	Unknown	70.95	DSF (SYPRO)		
+00291	Camel	Unknown	73.8	DSF (SYPRO)		
+00292	Camel	Unknown	71.94	DSF (SYPRO)		
+00293	Llama	Natural	56	DSF (SYPRO)		
+00294	Llama	Natural	52	DSF (SYPRO)		
+00295	Llama	Natural	49	DSF (SYPRO)		
+00296	Llama	Natural	64	DSF (SYPRO)		
+00297	Llama	Natural	62	DSF (SYPRO)		
+00298	Llama	Natural	62	DSF (SYPRO)		
+00299	Alpaca	Natural	74.5	DSF (SYPRO)		
+00300	Alpaca	Natural	70.3	DSF (SYPRO)		
+00301	Alpaca	Natural	57.8	DSF (SYPRO)		
+00302	Alpaca	Natural	67	DSF (SYPRO)		
+00303	Camel	Natural	60.7	DSF (SYPRO)		
+00304	Llama	Natural	69.6	Circular dichroism		
+00305	Llama	Natural	71.6	Circular dichroism		
+00306	Llama	Natural	79.8	Circular dichroism		
+00307	Llama	Natural	67.2	Circular dichroism		
+00308	Llama	Semi-Synthetic	61.6	Circular dichroism		
+00309	Llama	Semi-Synthetic	68.6	Circular dichroism		
+00310	Llama	Semi-Synthetic	65.2	Circular dichroism		
+00311	Llama	Semi-Synthetic	67.5	Circular dichroism		
+00312	Llama	Semi-Synthetic	66.1	Circular dichroism		
+00313	Llama	Semi-Synthetic	66.5	Circular dichroism		
+00314	Llama	Semi-Synthetic	70.9	Circular dichroism		
+00315	Llama	Semi-Synthetic	66.8	Circular dichroism		
+00316	Llama	Semi-Synthetic	68.1	Circular dichroism		
+00317	Llama	Semi-Synthetic	78	Circular dichroism		
+00318	Llama	Semi-Synthetic	73.2	Circular dichroism		
+00319	Llama	Semi-Synthetic	78.6	Circular dichroism		
+00320	Llama	Semi-Synthetic	76	Circular dichroism		
+00321	Llama	Semi-Synthetic	80.9	Circular dichroism		
+00322	Llama	Semi-Synthetic	63.3	Circular dichroism		
+00323	Llama	Semi-Synthetic	60.9	Circular dichroism		
+00324	Llama	Semi-Synthetic	64.7	Circular dichroism		
+00325	Llama	Semi-Synthetic	70.4	Circular dichroism		
+00326	Llama	Natural	58	DSF (SYPRO)		
+00327	Llama	Natural	67	DSF (SYPRO)		
+00328	Llama	Natural	57	DSF (SYPRO)		
+00329	Llama	Natural	60	DSF (SYPRO)		
+00330	Llama	Natural	60	Circular dichroism	62.0	
+00331	Llama	Semi-Synthetic	75	Circular dichroism	95.0	
+00332	Llama	Semi-Synthetic	67	Circular dichroism	95.0	
+00333	Llama	Semi-Synthetic	71	Circular dichroism	91.0	
+00334	Llama	Semi-Synthetic	70	Circular dichroism	83.0	
+00335	Llama	Semi-Synthetic	59	Circular dichroism	62.0	
+00336	Llama	Semi-Synthetic	57	Circular dichroism	46.0	
+00337	Llama	Semi-Synthetic	56	Circular dichroism	45.0	
+00338	Llama	Semi-Synthetic	58	Circular dichroism	31.0	
+00339	Llama	Semi-Synthetic	53	Circular dichroism	9.0	
+00340	Llama	Semi-Synthetic	43	Circular dichroism	7.0	
+00341	Llama	Semi-Synthetic	62	Circular dichroism	80.0	
+00342	Llama	Semi-Synthetic	76	Circular dichroism	95.0	
+00343	Llama	Semi-Synthetic	69	Circular dichroism	91.0	
+00344	Llama	Semi-Synthetic	72	Circular dichroism	91.0	
+00345	Llama	Semi-Synthetic	70	Circular dichroism	81.0	
+00346	Llama	Semi-Synthetic	58	Circular dichroism	46.0	
+00347	Llama	Semi-Synthetic	55	Circular dichroism	38.0	
+00348	Llama	Semi-Synthetic	55	Circular dichroism	19.0	
+00349	Llama	Semi-Synthetic	56	Circular dichroism	19.0	
+00350	Llama	Semi-Synthetic	54	Circular dichroism	5.0	
+00351	Llama	Semi-Synthetic	49	Circular dichroism	15.0	
+00352	Llama	Natural	54	DSF (SYPRO)		
+00353	Llama	Natural	71	DSF (SYPRO)		
+00354	Llama	Natural	59	DSF (SYPRO)		
+00355	Llama	Natural	55	DSF (SYPRO)	53.0	
+00356	Llama	Natural	71	DSF (SYPRO)		
+00357	Llama	Natural	73	DSF (SYPRO)		
+00358	Llama	Natural	55	DSF (SYPRO)		
+00359	Llama	Natural	47	DSF (SYPRO)		
+00360	Llama	Natural	70	DSF (SYPRO)		
+00361	Llama	Natural	72	DSF (SYPRO)		
+00362	Llama	Natural	59	DSF (SYPRO)		
+00363	Llama	Natural	71	DSF (SYPRO)		
+00364	Llama	Natural	63	DSF (SYPRO)		
+00365	Llama	Semi-Synthetic	85	Circular dichroism		
+00366	Llama	Semi-Synthetic	84	Circular dichroism		
+00367	Llama	Semi-Synthetic	85	Circular dichroism		
+00368	Llama	Semi-Synthetic	83	Circular dichroism		
+00369	Llama	Semi-Synthetic	82	Circular dichroism		
+00370	Llama	Semi-Synthetic	84	Circular dichroism		
+00371	Llama	Semi-Synthetic	74	Circular dichroism		
+00372	Llama	Semi-Synthetic	83	Circular dichroism		
+00373	Llama	Semi-Synthetic	84	Circular dichroism		
+00374	Llama	Semi-Synthetic	75	Circular dichroism		
+00375	Llama	Semi-Synthetic	84	Circular dichroism		
+00376	Llama	Semi-Synthetic	73	Circular dichroism		
+00377	Llama	Semi-Synthetic	78	Circular dichroism		
+00378	Llama	Semi-Synthetic	76	Circular dichroism		
+00379	Llama	Semi-Synthetic	76	Circular dichroism		
+00380	Llama	Semi-Synthetic	76	Circular dichroism		
+00381	Llama	Semi-Synthetic	80	Circular dichroism		
+00382	Llama	Semi-Synthetic	79	Circular dichroism		
+00383	Llama	Natural	77	Circular dichroism		
+00384	Llama	Natural	67	Circular dichroism		
+00385	Llama	Natural	61	Circular dichroism		
+00386	Llama	Natural	63	Circular dichroism		
+00387	Llama	Natural	53	Circular dichroism		
+00388	Llama	Natural	58	Circular dichroism		
+00389	Llama	Natural	67	Circular dichroism		
+00390	Llama	Natural	66	Circular dichroism		
+00391	Llama	Natural	53	Circular dichroism		
+00392	Llama	Natural	62	Circular dichroism		
+00393	Llama	Natural	57	Circular dichroism		
+00394	Llama	Natural	63	Circular dichroism		
+00395	Llama	Natural	72	Circular dichroism		
+00396	Llama	Natural	64	Circular dichroism		
+00397	Llama	Natural	64	Circular dichroism		
+00398	Llama	Natural	72	Circular dichroism		
+00399	Llama	Natural	80	Circular dichroism		
+00400	Llama	Natural	57	Circular dichroism		
+00401	Llama	Natural	58	Circular dichroism		
+00402	Llama	Natural	63	Circular dichroism		
+00403	Llama	Natural	69	Circular dichroism		
+00404	Llama	Natural	63	Circular dichroism		
+00405	Llama	Natural	68	Circular dichroism		
+00406	Llama	Natural	62	DSF (SYPRO)		
+00407	Llama	Natural	60	DSF (SYPRO)		
+00408	Llama	Natural	60	DSF (SYPRO)		
+00409	Llama	Natural	57	DSF (SYPRO)		
+00410	Llama	Natural	61	DSF (SYPRO)	55.0	
+00411	Llama	Semi-Synthetic	80	DSF (SYPRO)	15.0	
+00412	Llama	Natural	56	DSF (SYPRO)		
+00413	Llama	Natural	60	DSF (SYPRO)		
+00414	Llama	Natural	61	DSF (SYPRO)		
+00415	Llama	Natural	71	DSF (SYPRO)		
+00416	Llama	Natural	79	DSF (SYPRO)		
+00417	Llama	Natural	75	DSF (SYPRO)		
+00418	Llama	Natural	57	DSF (SYPRO)		
+00419	Llama	Natural	70	DSF (SYPRO)		
+00420	Llama	Natural	62	DSF (SYPRO)		
+00421	Llama	Natural	60	DSF (SYPRO)		
+00422	Llama	Natural	59	DSF (SYPRO)		
+00423	Llama	Semi-Synthetic	81	DSF (SYPRO)	70.0	
+00424	Llama	Semi-Synthetic	81	DSF (SYPRO)	78.0	
+00425	Llama	Natural	86	DSF (SYPRO)	73.0	
+00426	Llama	Semi-Synthetic	87	DSF (SYPRO)	94.0	
+00427	Llama	Semi-Synthetic	85	DSF (SYPRO)	87.0	
+00428	Llama	Natural	73	DSF (SYPRO)	63.0	
+00429	Llama	Semi-Synthetic	80	DSF (SYPRO)	87.0	
+00430	Llama	Semi-Synthetic	81	DSF (SYPRO)	88.0	
+00431	Llama	Semi-Synthetic	76	DSF (SYPRO)	69.0	
+00432	Llama	Semi-Synthetic	82	DSF (SYPRO)	82.0	
+00433	Llama	Semi-Synthetic	81	DSF (SYPRO)	84.0	
+00434	Llama	Semi-Synthetic	89	Circular dichroism	83.0	
+00435	Llama	Semi-Synthetic	89	Circular dichroism	81.0	
+00436	Llama	Semi-Synthetic	88	Circular dichroism	77.0	
+00437	Llama	Semi-Synthetic	48	Circular dichroism		
+00438	Llama	Semi-Synthetic	68	Circular dichroism		
+00439	Llama	Semi-Synthetic	70	Circular dichroism		
+00440	Llama	Semi-Synthetic	65	Circular dichroism		
+00441	Llama	Semi-Synthetic	71	Circular dichroism		
+00442	Llama	Semi-Synthetic	66	Circular dichroism		
+00443	Llama	Semi-Synthetic	75	Circular dichroism		
+00444	Llama	Semi-Synthetic	46	Circular dichroism		
+00445	Llama	Semi-Synthetic	65	Circular dichroism		
+00446	Llama	Natural	71	DSF (SYPRO)	84.0	
+00447	Llama	Semi-Synthetic	73	DSF (SYPRO)	98.0	
+00448	Llama	Semi-Synthetic	86	DSF (SYPRO)	92.0	
+00449	Llama	Natural	60	DSF (SYPRO)	0.0	
+00450	Llama	Semi-Synthetic	66	DSF (SYPRO)	81.0	
+00451	Llama	Semi-Synthetic	75	DSF (SYPRO)	83.0	
+00452	Llama	Natural	65	DSF (SYPRO)		
+00453	Llama	Natural	58	DSF (SYPRO)		
+00454	Llama	Natural	74	DSF (SYPRO)		
+00455	Llama	Natural	55	DSF (SYPRO)		
+00456	Llama	Natural	53	DSF (SYPRO)		
+00457	Llama	Natural	65	DSF (SYPRO)		
+00458	Llama	Natural	58	DSF (SYPRO)		
+00459	Llama	Natural	50	DSF (SYPRO)		
+00460	Llama	Natural	50	DSF (SYPRO)		
+00461	Llama	Natural	74	DSF (SYPRO)		
+00462	Llama	Natural	70	DSF (SYPRO)		
+00463	Llama	Natural	60	DSF (SYPRO)		
+00464	Llama	Semi-Synthetic	77	DSF (SYPRO)		
+00465	Llama	Semi-Synthetic	62	DSF (SYPRO)		
+00466	Llama	Semi-Synthetic	65	DSF (SYPRO)		
+00467	Llama	Semi-Synthetic	77	DSF (SYPRO)		
+00468	Llama	Semi-Synthetic	75	DSF (SYPRO)		
+00469	Llama	Semi-Synthetic	68	DSF (SYPRO)		
+00470	Llama	Semi-Synthetic	78	DSF (SYPRO)		
+00471	Llama	Natural	64	DSF (SYPRO)		
+00472	Llama	Natural	68	DSF (SYPRO)		
+00473	Llama	Natural	65	DSF (SYPRO)		
+00474	Llama	Natural	59	DSF (SYPRO)		
+00475	Llama	Natural	53	DSF (SYPRO)		
+00476	Llama	Natural	52	DSF (SYPRO)		
+00477	Llama	Natural	65	DSF (SYPRO)		
+00478	Llama	Natural	55	DSF (SYPRO)		
+00479	Llama	Natural	61	DSF (SYPRO)		
+00480	Llama	Natural	59	DSF (SYPRO)		
+00481	Camel	Natural	80.7	DSC		
+00482	Camel	Semi-Synthetic	81.7	DSC		
+00483	Camel	Semi-Synthetic	80.7	DSC		
+00484	Camel	Semi-Synthetic	81.9	DSC		
+00485	Alpaca	Natural				
+00486	Alpaca	Natural				
+00487	Alpaca	Natural				
+00488	Alpaca	Natural				
+00489	Llama	Natural	55	Circular dichroism	80.0	
+00490	Llama	Natural	57	Circular dichroism	80.0	
+00491	Camel	Natural	64.2	Other		
+00492	Camel	Natural	64.1	Other		
+00493	Llama	Natural	60.1	Other		
+00494	Camel	Natural	66.7	Other		
+00495	Llama	Natural	84.7	Circular dichroism		
+00496	Llama	Natural	73.1	Circular dichroism		
+00497	Llama	Natural	75.1	Circular dichroism		
+00498	Llama	Natural	72.4	Circular dichroism		
+00499	Llama	Natural	74.6	Circular dichroism		
+00500	Llama	Natural	77.2	Circular dichroism		
+00501	Llama	Semi-Synthetic	93.6	Circular dichroism		
+00502	Llama	Semi-Synthetic	84.7	Circular dichroism		
+00503	Llama	Semi-Synthetic	78.8	Circular dichroism		
+00504	Llama	Semi-Synthetic	79.1	Circular dichroism		
+00505	Llama	Semi-Synthetic	80.1	Circular dichroism		
+00506	Llama	Semi-Synthetic	85.3	Circular dichroism		
+00507	Alpaca	Natural	59 	DSC		
+00508	Alpaca	Semi-Synthetic	58	DSC		
+00509	Alpaca	Semi-Synthetic	58	DSC		
+00510	Alpaca	Semi-Synthetic	61	DSC		
+00511	Alpaca	Semi-Synthetic	55	DSC		
+00512	Alpaca	Semi-Synthetic	56	DSC		
+00513	Alpaca	Semi-Synthetic	67	DSC		
+00514	Alpaca	Semi-Synthetic	56	DSC		
+00515	Alpaca	Semi-Synthetic	58	DSC		
+00516	Alpaca	Semi-Synthetic	60	DSC		
+00517	Alpaca	Semi-Synthetic	71	DSC		
+00518	Alpaca	Semi-Synthetic	71	DSC		
+00519	Alpaca	Natural	65	Circular dichroism		
+00520	Shark	Natural	78	Circular dichroism	25.0	
+00521	Shark	Natural	69	Circular dichroism	75.0	
+00522	Shark	Natural	61	Circular dichroism	62.5	
+00523	Shark	Natural	72	Circular dichroism	25.0	
+00524	Shark	Natural	72	Circular dichroism	75.0	
+00525	Shark	Natural	64	Circular dichroism	62.5	
+00526	Shark	Natural	68	Circular dichroism	62.5	
+00527	Shark	Natural				
+00528	Shark	Natural	58	Circular dichroism	25.0	
+00529	Shark	Natural	46	Circular dichroism	25.0	
+00530	Shark	Natural				
+00531	Shark	Natural	76	Circular dichroism	62.5	
+00532	Shark	Natural	59	Circular dichroism	25.0	
+00533	Shark	Natural	55	Circular dichroism	37.5	
+00534	Shark	Natural	72	Circular dichroism	62.5	
+00535	Shark	Natural	66	Circular dichroism	37.5	
+00536	Shark	Natural	55	Circular dichroism	37.5	
+00537	Shark	Natural				
+00538	Shark	Natural				
+00539	Shark	Natural	64	Circular dichroism	37.5	
+00540	Shark	Natural	50	DSF (SYPRO)	74.0	
+00541	Shark	Semi-Synthetic	53	DSF (SYPRO)	51.0	
+00542	Shark	Semi-Synthetic	68	DSF (SYPRO)	73.0	
+00543	Shark	Semi-Synthetic	61	DSF (SYPRO)		
+00544	Shark	Semi-Synthetic	53	DSF (SYPRO)		
+00545	Shark	Semi-Synthetic	58	DSF (SYPRO)		
+00546	Shark	Semi-Synthetic	66	DSF (SYPRO)		
+00547	Shark	Semi-Synthetic	62	DSF (SYPRO)		
+00548	Shark	Semi-Synthetic	60	DSF (SYPRO)		
