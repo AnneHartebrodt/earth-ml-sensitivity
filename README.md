@@ -24,7 +24,8 @@ The question we are adressing whether the improved accuracies of the deep learni
 Here we investigate two biased splits, based on the metadata and based on the sequence homology in the training data, and compare it to the baseline model of a random split.
 
 ### Metadata based split:
-In the metadata in the training data used for the TEMPRO model the species of origin is annotated. 
+In the metadata in the training data used for the TEMPRO model the species of origin is annotated. Instead of splitting the data randomly, we split by species in a crossvalidation setup. Each species is used as a independent hold-out data set once, meaning the data is trained on all other species, and the final test accuracies are computed on the held out species. Within the training data, we use an 80:20 split again to train and compute the current model performance respectivly. In the plot below, we show the Mean Absolute Error (MAE), the Root Mean Squared Error (RMSE) and the $R^2$ values for the crossvalidation setup. For reference, we also show the performance of the 'regular' training setup where we first split the data 80:20 and use the 20 percent as the independent hold out data set and the remaining 80% are split once again for the training loop. As we can see, the MAE and RMSE  are lower for the 'standard' random setup, that when the data is split according to species. This means that, when using the model, we will be able to predict the melting temperature of peptides reasonably well, if we have a peptide that stems from one of the species we trained on. On the other hand, if we have a peptide from another organism, we have to expect a drop in performance for the model.
+
 ![image](./figures/species_split.png)
 
 
