@@ -8,7 +8,7 @@ The metadata contains experimental values for the melting temperature of the ant
 
 ![](scripts/figures/2_overview_NbThermo_withsequence.png)
 
-The melting temperature per species varies, where the sharks have lower mean Tm and higher average Tm for Camel.
+The melting temperature per species varies, where the Sharks have the lowest mean Tm and Camels have the highest average Tm.
 
 | Species | mean | std | 
 |----------|----------|----------|
