@@ -19,14 +19,23 @@ TEMPRO [2] is a model specifically designed and train to predict the melting tem
 - The test setup has been modified to include a train-test-validation split, where the data is initally split into two 
 
 ## Research question:
-The question we are adressing whether the improved accuracies of the deep learning models in TEMPRO drop when using a biased split for training and testing. 
-Here we investigate two biased splits, based on the metadata and based on the sequence homology. Instead of comp
+The question we are adressing whether the improved accuracies of the deep learning models in TEMPRO drop when using a biased split for training and testing. Unlike a random split, a biased split does not distributed the samples in an iid fashion into training, test and validation split. Instead, the grouping variables in the data are used to create training and test datasets. 
+
+Here we investigate two biased splits, based on the metadata and based on the sequence homology in the training data, and compare it to the baseline model of a random split.
 
 ### Metadata based split:
-The species are annotated in the metadata. For an inital test we split th
+In the metadata in the training data used for the TEMPRO model the species of origin is annotated. 
+~[image](../figures/species_split.png)
+
 
 ### Homology based split:
 For the homology based split, we used computed the pairwise alignment distance between all training sequences from the database based on the BLOSUM90 matrix which is a substitution matrix for high sequence similarity, as most of the species in the data base are from the group of camelidae. We clustered the precomputed distance matrix using spectral clustering to obtain a predefined number of homology clusters. 
+~[image](../figures/homology_split.png)
+
+
+## Comparison with other models
+
+~[image](../figures/random_forest.png)
 
 
 ## References:
