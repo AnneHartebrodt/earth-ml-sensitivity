@@ -38,7 +38,7 @@ For the homology based split, we used computed the pairwise alignment distance b
 
 
 ## Comparison with other models
-Finally, for fairness, we used the same strategy for one of the baseline ML model described in the TEMPRO paper. Here we trained a random forest regressor using each species as an independent hold-out dataset once and computed the error metrics. As we can see, the error increases even more dramatically, meaning that the DL learning model is somewhat less sensitive to shifts in data distribution than the random forest classifier.
+Finally, for fairness, we used the same strategy for one of the baseline ML model described in the TEMPRO paper. Here we trained a random forest regressor using each species as an independent hold-out dataset once and computed the error metrics. As we can see, the error increases similarly, meaning that the random forest classifier has the same problems as the DL model.
 
 ![image](./figures/random_forest.png)
 
