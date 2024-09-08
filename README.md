@@ -1,2 +1,36 @@
-# earth-ml-sensitivity
-Bayer hackathon project repository
+# Sensitivity and Uncertainty of Machine learning models
+
+The goal of this repository is to highlight challenges when training predictive models in biomedical science with limited data availability and shifts in data distributions which are hard to forsee and hard to predict. On the example of a small model for the prediction of nanobody melting temperature, we will highlight a common pitfall when training models based on sequences. Notably, sequences which are highly similar to sequences which have been 'seen' by the model during training are easier to predict than sequences which are dissimilar. The question a user of the model will have is how well they can expect their model to perform on data which is dissimilar to the sequences in the training data.
+
+Bernett et. al [3] have shown that many protein-protein interaction tools heavily rely in homology to predict interactions. They have shown that when training on randomly split data sets, the prediction accuracies are really high. However, accuracies drop when spliting the training data in such a way, that the homology between the training and test sets are reduced. 
+
+This is not only a problem for sequence data. In many predictive tasks, a major question is whether good test accuracies on the test split of the training data translate well into real life. In the biomedical domain, data is ridden with batch effect, systematic shifts in the data, which may lead to a drastic drop in performance when the predictor is used on the novel data set. Usually the performance of a model trained on data from one hospital is worse on data from a different hospital. 
+
+
+## Data
+NbThermo [1] is a literature curated database containing 567 nanobody (smaller antibodies) sequences, their melting temperature and various metadata such as experimental technique. 
+
+## Model
+TEMPRO [2] is a model specifically designed and train to predict the melting temperature of shorter peptide sequences. The authors claim that their model achieves superior performance to existing models and baseline, 'standard' machine learning predictors. The authors use a well established approach to training their model, creating an 80:20 train:test split. 
+
+### Changes to the tempro model in this repository
+- Early stopping has been intoduced to avoid excessive training, as the model tends to overtrain quickly due to the lack of data.
+- A smaller model for the embedding sizes has been used for quicker training. The embeddings can be drop-in replaced with larger embedding models if required.
+- The test setup has been modified to include a train-test-validation split, where the data is initally split into two 
+
+## Research question:
+The question we are adressing whether the improved accuracies of the deep learning models in TEMPRO drop when using a biased split for training and testing. 
+Here we investigate two biased splits, based on the metadata and based on the sequence homology. Instead of comp
+
+### Metadata based split:
+The species are annotated in the metadata. For an inital test we split th
+
+### Homology based split:
+For the homology based split, we used computed the pairwise alignment distance between all training sequences from the database based on the BLOSUM90 matrix which is a substitution matrix for high sequence similarity, as most of the species in the data base are from the group of camelidae. We clustered the precomputed distance matrix using spectral clustering to obtain a predefined number of homology clusters. 
+
+
+## References:
+
+[1] Mario S Valdés-Tresanco, Mario E Valdés-Tresanco, Esteban Molina-Abad, Ernesto Moreno, NbThermo: a new thermostability database for nanobodies, Database, Volume 2023, 2023, baad021, https://doi.org/10.1093/database/baad021
+[2]Alvarez, J.A.E., Dean, S.N. TEMPRO: nanobody melting temperature estimation model using protein embeddings. Sci Rep 14, 19074 (2024). https://doi.org/10.1038/s41598-024-70101-6
+[3] Judith Bernett, David B Blumenthal, Markus List, Cracking the black box of deep sequence-based protein–protein interaction prediction, Briefings in Bioinformatics, Volume 25, Issue 2, March 2024, bbae076, https://doi.org/10.1093/bib/bbae076
