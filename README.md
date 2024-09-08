@@ -1,19 +1,17 @@
 # Sensitivity and Uncertainty of Machine learning models for Predicting the Melting Temperature of Nanobodies
 
-The goal of this repository is to highlight challenges when training predictive models in biomedical science with limited data availability and shifts in data distributions which are hard to forsee and hard to predict. On the example of a small model for the prediction of nanobody melting temperature, we will highlight a common pitfall when training models based on sequences. Notably, sequences which are highly similar to sequences which have been 'seen' by the model during training are easier to predict than sequences which are dissimilar. The question a user of the model will have is how well they can expect their model to perform on data which is dissimilar to the sequences in the training data.
+Bernett et. al [3] have shown that many protein-protein interaction tools suffer from a subtle form of data leakage due to homology leading to inflated accuracies in prediction tools. They have shown that when training on randomly split data sets, the prediction accuracies are really high due to homology in the training and test sets, making it easy for the model to predict the PPIs. However, accuracies drop when spliting the training data in such a way, that the homology between the training and test sets are reduced. 
 
-Bernett et. al [3] have shown that many protein-protein interaction tools heavily rely in homology to predict interactions. They have shown that when training on randomly split data sets, the prediction accuracies are really high. However, accuracies drop when spliting the training data in such a way, that the homology between the training and test sets are reduced. 
+On the example of a small model for the prediction of nanobody melting temperature, we will highlight this pitfall when training models based on sequences. Notably, sequences which are highly similar to sequences which have been 'seen' by the model during training are easier to predict than sequences which are dissimilar.
 
-This is not only a problem for sequence data. In many predictive tasks, a major question is whether good test accuracies on the test split of the training data translate well into real life. In the biomedical domain, data is ridden with batch effect, systematic shifts in the data, which may lead to a drastic drop in performance when the predictor is used on the novel data set. Usually the performance of a model trained on data from one hospital is worse on data from a different hospital. 
-
-
-## Data
+Data leakage is not only a problem for sequence data. In many predictive tasks, a major question is whether good test accuracies on the test split of the training data translate well into real life. Hidden forms of data leakage may lead to overconfident accuracy estimates for certain predictors. In biomedicine and diagnostics this needs to be avoided at all costs, as it can lead to negative outcome for patients.
 NbThermo [1] is a literature curated database containing 567 nanobody (smaller antibodies) sequences, their melting temperature and various metadata such as experimental technique. [Link to data analysis](database.md)
 
-## Model
-TEMPRO [2] is a model specifically designed and train to predict the melting temperature of shorter peptide sequences. The authors claim that their model achieves superior performance to existing models and baseline, 'standard' machine learning predictors. The authors use a well established approach to training their model, creating an 80:20 train:test split. 
+# Investigation of a model to predict the melting temperature of peptides 
+## Data & Model
+As a model, we use the TEMPRO [2] model specifically designed and train to predict the melting temperature of shorter peptide sequences. The authors claim that their model achieves superior performance to existing models and baseline, 'standard' machine learning predictors. The authors use a well established approach to training their model, creating an 80:20 train:test split. NbThermo [1] is a literature curated database containing 567 nanobody (smaller antibodies) sequences, their melting temperature and various metadata such as experimental technique. This database and additional sequences have been used in TEMPRO to predict the melting temperature.
 
-### Changes to the tempro model in this repository
+## Changes to the TEMPRO model in this repository
 - Early stopping has been intoduced to avoid excessive training, as the model tends to overtrain quickly due to the lack of data.
 - A smaller model for the embedding sizes has been used for quicker training. The embeddings can be drop-in replaced with larger embedding models if required.
 - The test setup has been modified to include a train-test-validation split, where the data is initally split into two 
@@ -38,7 +36,7 @@ For the homology based split, we used computed the pairwise alignment distance b
 
 
 ## Comparison with other models
-Finally, for fairness, we used the same strategy for one of the baseline ML model described in the TEMPRO paper. Here we trained a random forest regressor using each species as an independent hold-out dataset once and computed the error metrics. As we can see, the error increases even more dramatically, meaning that the DL learning model is somewhat less sensitive to shifts in data distribution than the random forest classifier.
+Finally, for fairness, we used the same strategy for one of the baseline ML model described in the TEMPRO paper. Here we trained a random forest regressor using each species as an independent hold-out dataset once and computed the error metrics. As we can see, the error increases similarly, meaning that the random forest classifier has the same problems as the DL model.
 
 ![image](./figures/random_forest.png)
 
@@ -65,14 +63,8 @@ Accurate and robust predictive models are crucial for real-world medical applica
 
 ## References:
 
-[1] Mario S Valdés-Tresanco, Mario E Valdés-Tresanco, Esteban Molina-Abad, Ernesto Moreno, NbThermo: a new thermostability database for nanobodies, Database, Volume 2023, 2023, baad021, https://doi.org/10.1093/database/baad021
-
-[2]Alvarez, J.A.E., Dean, S.N. TEMPRO: nanobody melting temperature estimation model using protein embeddings. Sci Rep 14, 19074 (2024). https://doi.org/10.1038/s41598-024-70101-6
-
-[3] Judith Bernett, David B Blumenthal, Markus List, Cracking the black box of deep sequence-based protein–protein interaction prediction, Briefings in Bioinformatics, Volume 25, Issue 2, March 2024, bbae076, https://doi.org/10.1093/bib/bbae076
-
-[4] Johannes Thorling Hadsund, Tadeusz Satława, Bartosz Janusz et al. nanoBERT: a deep learning model for gene agnostic navigation of the nanobody mutational space. Bioinformatics Advances Volume 4, Issue 1, 2024, vbae033, https://doi.org/10.1093/bioadv/vbae033.
-
-[5] John Jumper, Richard Evans, Alexander Pritzel et al. Highly accurate protein structure prediction with AlphaFold. Nature (2021). https://doi.org/10.1038/s41586-021-03819-2
-
-
+1. Mario S Valdés-Tresanco, Mario E Valdés-Tresanco, Esteban Molina-Abad, Ernesto Moreno, NbThermo: a new thermostability database for nanobodies, Database, Volume 2023, 2023, baad021, https://doi.org/10.1093/database/baad021
+2. Alvarez, J.A.E., Dean, S.N. TEMPRO: nanobody melting temperature estimation model using protein embeddings. Sci Rep 14, 19074 (2024). https://doi.org/10.1038/s41598-024-70101-6
+3. Judith Bernett, David B Blumenthal, Markus List, Cracking the black box of deep sequence-based protein–protein interaction prediction, Briefings in Bioinformatics, Volume 25, Issue 2, March 2024, bbae076, https://doi.org/10.1093/bib/bbae076
+4. Johannes Thorling Hadsund, Tadeusz Satława, Bartosz Janusz et al. nanoBERT: a deep learning model for gene agnostic navigation of the nanobody mutational space. Bioinformatics Advances Volume 4, Issue 1, 2024, vbae033, https://doi.org/10.1093/bioadv/vbae033.
+5. John Jumper, Richard Evans, Alexander Pritzel et al. Highly accurate protein structure prediction with AlphaFold. Nature (2021). https://doi.org/10.1038/s41586-021-03819-2
