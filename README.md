@@ -1,4 +1,4 @@
-# Sensitivity and Uncertainty of Machine learning models
+# Sensitivity and Uncertainty of Machine learning models for Predicting the Melting Temperature of Nanobodies
 
 The goal of this repository is to highlight challenges when training predictive models in biomedical science with limited data availability and shifts in data distributions which are hard to forsee and hard to predict. On the example of a small model for the prediction of nanobody melting temperature, we will highlight a common pitfall when training models based on sequences. Notably, sequences which are highly similar to sequences which have been 'seen' by the model during training are easier to predict than sequences which are dissimilar. The question a user of the model will have is how well they can expect their model to perform on data which is dissimilar to the sequences in the training data.
 
@@ -42,11 +42,37 @@ Finally, for fairness, we used the same strategy for one of the baseline ML mode
 
 ![image](./figures/random_forest.png)
 
+## Identify mutant thermostable nanobodies with conserved function
+
+If the TEMPRO model reliably predicts Tm, it can be used to identify more thermostable nanobodies with conserved function. We explore this posibility and perform the following steps:
+
+1. Find mutant nanobodies with conserved function using nanoBert [4].  
+
+
+2. Predict the 3D structure of the wildtype and mutant nanobodies using AlphFold2 (https://neurosnap.ai/service/AlphaFold2) [5]. 
+
+3. Predict Tm for the mutant nanobodies using TEMPRO
+
+[More...](mutations.md)
+
+Example of mutant nanobody for the `sdab344` with a higher thermostability. A conserved structure was predicted, with a `Y>F` exchange in the CDR3, that has higher Tm (66 degrees) compared to the wildtype (47 degrees). 
+![image](./figures/mutation_example.png)
+
 ## Conclusion
 Overall, when testing predictors there should always be an independent hold-out dataset. Furthermore, if you expect a shift in distribution from training to prediction time, this should be anticipated during the training and, as far as possible the validation strategy should include measures for the expected drop in accuracy during inference.
+
+Accurate and robust predictive models are crucial for real-world medical applications. In this study, we showed a proof-of-concept that machine learning can identify mutant nanobodies with conserved structure and function comparable to the wildtype, but with higher thermostability. This have very important implications in the future design of nanobodies. More stable nanobodies can be transported more easily globally, which is particularly important for improving healthcare access in underdeveloped regions.
 
 ## References:
 
 [1] Mario S Valdés-Tresanco, Mario E Valdés-Tresanco, Esteban Molina-Abad, Ernesto Moreno, NbThermo: a new thermostability database for nanobodies, Database, Volume 2023, 2023, baad021, https://doi.org/10.1093/database/baad021
+
 [2]Alvarez, J.A.E., Dean, S.N. TEMPRO: nanobody melting temperature estimation model using protein embeddings. Sci Rep 14, 19074 (2024). https://doi.org/10.1038/s41598-024-70101-6
+
 [3] Judith Bernett, David B Blumenthal, Markus List, Cracking the black box of deep sequence-based protein–protein interaction prediction, Briefings in Bioinformatics, Volume 25, Issue 2, March 2024, bbae076, https://doi.org/10.1093/bib/bbae076
+
+[4] Johannes Thorling Hadsund, Tadeusz Satława, Bartosz Janusz et al. nanoBERT: a deep learning model for gene agnostic navigation of the nanobody mutational space. Bioinformatics Advances Volume 4, Issue 1, 2024, vbae033, https://doi.org/10.1093/bioadv/vbae033.
+
+[5] John Jumper, Richard Evans, Alexander Pritzel et al. Highly accurate protein structure prediction with AlphaFold. Nature (2021). https://doi.org/10.1038/s41586-021-03819-2
+
+
