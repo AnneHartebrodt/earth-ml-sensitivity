@@ -9,11 +9,11 @@ For the residual analysis, we assessed:
 - The presence of outliers indicating large errors for specific data points across all models.
 
 The nanobodies Tm dataset described in [2] contains the following species:
-![](scripts/figures/4_overview_TEMPRO.png)
+![](./scripts/figures/4_overview_TEMPRO.png)
 
 The species Tm's distribution revealed that Camel have a higher average Tm (70 degrees) compared to Llama or Alpacas (~66 degrees).
 
-![](scripts/figures/6_true_tm_TEMPRO_dataset.png)
+![](./scripts/figures/6_true_tm_TEMPRO_dataset.png)
 
 The Mean and STD calculation for TEMPRO predictions suggest that Camel nanobodies Tms are harder to predict. Below are the uncertainty measures (MAE, MSE, RMSE) for Alpaca, Camel and Llama:
 
@@ -41,7 +41,7 @@ Residual analysis shows that TEMPRO's residuals are randomly distributed around 
 
 TEMPRO shows a 3% outlier rate, where a outlier is defined as residuals not in range [-2,2].
 
-![](scripts/figures/5_residuals_TEMPRO_and_othermodels.png)
+![](./scripts/figures/5_residuals_TEMPRO_and_othermodels.png)
 
 ```	
 Model               mean        std
