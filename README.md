@@ -75,9 +75,11 @@ If the TEMPRO model reliably predicts Tm, it can be used to identify more thermo
 
 ### Results
 
-In total we identified more than `30 alternative nanobodies` which are more thermostable compared to wildtype and putatively preserves the structure and function. 
+In total we identified more than `30 alternative nanobodies` which show to be (1) more thermostable and (2) similar structure and function compared to wildtype. The analysis was based on the TEMPRO nanobodies dataset and the outlined prediction steps.
 
-An example of a predicted thermostable mutant nanobody for the `sdab344` wildtype, identified using the TEMPRO nanobodies dataset and the outlined steps. The mutant has a `Y>F` mutation in the CDR3 loop, which preserves the nanobody's structure compared to the wildtype. The predicted Tm for the mutant is 66°C, more than 19°C higher than the wildtype's Tm of 47°C.
+#### Example mutant nanobody from computed [Top hits](predictions/mutated_seq_with_predictions_tophits.csv):
+
+The examples shows a predicted mutant nanobody for the `sdab344` which is more thermostable. The mutant has a `Y>F` mutation in the CDR3 loop, which preserves the nanobody's structure compared to the wildtype. The predicted Tm for the mutant is 66°C, more than 19°C higher than the wildtype's Tm of 47°C.
 
 ![image](./figures/mutation_example.png)
 
