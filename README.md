@@ -33,7 +33,7 @@ As a model, we use the TEMPRO [2] model specifically designed and train to predi
 ## Changes to the TEMPRO model in this repository
 - Early stopping has been intoduced to avoid excessive training, as the model tends to overtrain quickly due to the lack of data.
 - A smaller model for the embedding sizes has been used for quicker training. The embeddings can be drop-in replaced with larger embedding models if required.
-- The test setup has been modified to include a train-test-validation split, where the data is initally split into two 
+- The test setup has been modified to include a train-test-validation split, where the data is initally split into two sets, with 20% of the data held out an never seen during training, and the remaining 80% split into train:test at a 80:20 rationagain.
 
 ## Research question:
 The question we are adressing whether the improved accuracies of the deep learning models in TEMPRO drop when using a biased split for training and testing. Unlike a random split, a biased split does not distributed the samples in an iid fashion into training, test and validation split. Instead, the grouping variables in the data are used to create training and test datasets. 
