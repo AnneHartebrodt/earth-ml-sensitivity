@@ -1,7 +1,7 @@
 # Sensitivity and Uncertainty of Machine learning models for Predicting the Melting Temperature of Nanobodies
 
 - [Motivation](#motivation)
-- [Investigation of a model to predict the melting temperature of peptides](#part1)
+- [Investigation of a ML model to predict the melting temperature of peptides](#part1)
     - Data & Model
     - Changes to the TEMPRO model in this repository
     - Research question
@@ -11,9 +11,11 @@
 - [Real-world application of ML: Identify mutant thermostable nanobodies with conserved function](#part2)
     - Motivation
     - Predict mutant nanobodies with conserved function using nanoBert  
-    - Predict the 3D structure of the wildtype and mutant nanobodies using AlphFold2 
-    - Predict Tm for the mutant nanobodies using TEMPRO
+    - Predict the 3D structure of the wildtype and mutant nanobodies using AlphaFold2 
+    - Predict melting temperature for the mutant nanobodies using TEMPRO
     - Select putative thermostable mutant nanobodies.
+- [Conclusions](#conclusions)
+- [References](#references)
 
 # Motivation <a name="motivation"></a>
 
@@ -24,7 +26,7 @@ On the example of a small model for the prediction of nanobody melting temperatu
 Data leakage is not only a problem for sequence data. In many predictive tasks, a major question is whether good test accuracies on the test split of the training data translate well into real life. Hidden forms of data leakage may lead to overconfident accuracy estimates for certain predictors. In biomedicine and diagnostics this needs to be avoided at all costs, as it can lead to negative outcome for patients.
 NbThermo [1] is a literature curated database containing 567 nanobody (smaller antibodies) sequences, their melting temperature and various metadata such as experimental technique. [Link to data analysis](nbthermo.md)
 
-# Investigation of a model to predict the melting temperature of peptides  <a name="part1"></a>
+# Investigation of a ML model to predict the melting temperature of peptides  <a name="part1"></a>
 ## Data & Model
 As a model, we use the TEMPRO [2] model specifically designed and train to predict the melting temperature of shorter peptide sequences. The authors claim that their model achieves superior performance to existing models and baseline, 'standard' machine learning predictors. The authors use a well established approach to training their model, creating an 80:20 train:test split. NbThermo [1] is a literature curated database containing 567 nanobody (smaller antibodies) sequences, their melting temperature and various metadata such as experimental technique. This database and additional sequences have been used in TEMPRO to predict the melting temperature ([Residuals analysis of TEMPRO and other models for the Tm predictions in [2]](tempro.md)).
 
@@ -63,9 +65,9 @@ If the TEMPRO model reliably predicts Tm, it can be used to identify more thermo
 
 1. Predict mutant nanobodies with conserved function using nanoBert [4].  
 
-2. Predict the 3D structure of the wildtype and mutant nanobodies using AlphFold2 (https://neurosnap.ai/service/AlphaFold2) [5]. 
+2. Predict the 3D structure of the wildtype and mutant nanobodies using AlphaFold2 (https://neurosnap.ai/service/AlphaFold2) [5]. 
 
-3. Predict Tm for the mutant nanobodies using TEMPRO.
+3. Predict melting temperature for the mutant nanobodies using TEMPRO.
 
 4. Select putative thermostable mutant nanobodies.
 
@@ -75,15 +77,28 @@ An example of a predicted thermostable mutant nanobody for the `sdab344` wildtyp
 
 ![image](./figures/mutation_example.png)
 
-## Conclusion
+## Conclusions <a name="conclusions"></a>
 Overall, when testing predictors there should always be an independent hold-out dataset. Furthermore, if you expect a shift in distribution from training to prediction time, this should be anticipated during the training and, as far as possible the validation strategy should include measures for the expected drop in accuracy during inference.
 
 Accurate and robust predictive models are crucial for real-world medical applications. In this study, we showed a proof-of-concept that machine learning can identify mutant nanobodies with conserved structure and function comparable to the wildtype, but with higher thermostability. This have very important implications in the future design of nanobodies. More stable nanobodies can be transported more easily globally, which is particularly important for improving healthcare access in underdeveloped regions.
 
-## References:
+## References <a name="references"></a>
 
 1. Mario S Valdés-Tresanco, Mario E Valdés-Tresanco, Esteban Molina-Abad, Ernesto Moreno, NbThermo: a new thermostability database for nanobodies, Database, Volume 2023, 2023, baad021, https://doi.org/10.1093/database/baad021
 2. Alvarez, J.A.E., Dean, S.N. TEMPRO: nanobody melting temperature estimation model using protein embeddings. Sci Rep 14, 19074 (2024). https://doi.org/10.1038/s41598-024-70101-6
 3. Judith Bernett, David B Blumenthal, Markus List, Cracking the black box of deep sequence-based protein–protein interaction prediction, Briefings in Bioinformatics, Volume 25, Issue 2, March 2024, bbae076, https://doi.org/10.1093/bib/bbae076
 4. Johannes Thorling Hadsund, Tadeusz Satława, Bartosz Janusz et al. nanoBERT: a deep learning model for gene agnostic navigation of the nanobody mutational space. Bioinformatics Advances Volume 4, Issue 1, 2024, vbae033, https://doi.org/10.1093/bioadv/vbae033.
 5. John Jumper, Richard Evans, Alexander Pritzel et al. Highly accurate protein structure prediction with AlphaFold. Nature (2021). https://doi.org/10.1038/s41586-021-03819-2
+
+## Contact
+
+This project was done during the "Data Science Meets Biology" Hackathon organized by Bayer and MDC in Berlin between 6-9 September 2024.
+
+Project advisor: Ni Fang (Bayer)
+
+Team:
+- Anne Hartebrodt
+- Finnja Becker
+- Madalina Giurgiu
+
+Presentation slides : [Hackathon_Bayer2024_Earth_ML_Sensitivity.pdf](Hackathon_Bayer2024_Earth_ML_Sensitivity.pdf)
