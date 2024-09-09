@@ -19,7 +19,7 @@
 
 # Motivation <a name="motivation"></a>
 
-Bernett et. al [3] have shown that many protein-protein interaction (PPI) prediction tools suffer from a subtle form of data leakage due to homology leading to inflated accuracies in prediction tools. They have shown that when training on randomly split data sets, the prediction accuracies are really high due to homology in the training and test sets, making it easy for the model to predict the PPIs. However, accuracies drop when spliting the training data in such a way, that the homology between the training and test sets are reduced. 
+Bernett et. al [3] have shown that many protein-protein interaction (PPI) prediction tools suffer from a subtle form of data leakage due to homology leading to inflated accuracies in prediction tools. They have shown that when training on randomly split data sets, the prediction accuracies are high due to homology in the training and test sets, making it easy for the model to predict the PPIs. However, accuracies drop when spliting the training data in such a way, that the homology between the training and test sets are reduced. 
 
 On the example of a small model for the prediction of nanobody melting temperature, we will highlight this pitfall when training models based on sequences. Notably, sequences which are highly similar to sequences which have been 'seen' by the model during training are easier to predict than sequences which are dissimilar.
 
