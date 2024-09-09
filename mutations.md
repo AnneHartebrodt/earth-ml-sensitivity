@@ -9,6 +9,7 @@ We showcase the applicability of ML models for a potential real-world applicatio
 - [Predict the 3D structure of the wildtype and mutant nanobodies using AlphaFold2](#step2)
 - [Predict  melting temperature for the mutant nanobodies using TEMPRO](#step3)
 - [Select putative thermostable mutant nanobodies](#step4)
+- [Results and conclusions](#conclusions)
 
 
 ## Motivation <a name="motivation"></a>
@@ -103,7 +104,9 @@ For this purpose we keep in our dataset predictions which have:
 |sdab544|46.0|KAEVVAGPYAGHDY          |K     |95      |QVQLQESGGGLVQAGGSLRLSCAASGITYSRSTMGWYRQVPGKQRELVSSIRWNGSALYADSVKGRFTISRDNAKNTAYLQMNSLRPEDTAVFYC<mask>AEVVAGPYAGHDYWGQGTQVTVSS                               |N  |QVQLQESGGGLVQAGGSLRLSCAASGITYSRSTMGWYRQVPGKQRELVSSIRWNGSALYADSVKGRFTISRDNAKNTAYLQMNSLRPEDTAVFYCNAEVVAGPYAGHDYWGQGTQVTVSS                               |0.5678333044052124|58.241066  |49.421516|12.241065999999996 |8.81955                |0.7204887221423364 |0           |14      |0.0                 |0.0     |0.0     |K>N      |no                  |
 |sdab546|53.0|ATKLTWYGAYQS            |T     |97      |QVQLQESGGGLVQGGGSLRLSCAASGDTFSRKIMAWFRQAPDKQREGLATIDPDGTMASYADSARGRFTISRDNAKSAVYLQMNSLRPEDTAVYYCA<mask>KLTWYGAYQSWGQGTQVTVSS                                |A  |QVQLQESGGGLVQGGGSLRLSCAASGDTFSRKIMAWFRQAPDKQREGLATIDPDGTMASYADSARGRFTISRDNAKSAVYLQMNSLRPEDTAVYYCAAKLTWYGAYQSWGQGTQVTVSS                                |0.6606288552284241|56.9702    |53.60803 |3.9701999999999984 |3.362169999999999      |0.8468515440028211 |1           |12      |0.08333333333333333 |0.0     |0.0     |T>A      |no                  |
 
+## Results and conclusions <a name="conclusions"></a>
 
+Here we showcase how we can use ML to identify in-silico putative mutant nanobodies which are more thermostable compared to wildtype. We found more than 30 alternative nanobodies candidates that show to have higher melting temperature based on the TEMPRO dataset.
 
 Source: `scripts/3_Predict_Thermostable_MutantNanobodies.ipynb`.
 
